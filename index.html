@@ -16,8 +16,37 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__nav">
+            <a class="header__logo" href="#" aria-label="Переход на главную страницу">
+              <svg width="119" height="23" viewBox="0 0 119 23">
+                <use href="./img/sprite.svg#icon-logo"></use>
+              </svg>
+            </a>
+          </div>
+          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+        </div>
+        <div class="header__intro">
+          <div class="header__description">
+            <p>Омск</p>
+            <h1>Фитнес центр</h1>
+            <ul class="header__list">
+              <li>Тренажёрный зал</li>
+              <li>Групповые занятия</li>
+              <li>Кардио-зона</li>
+            </ul>
+            <a class="header__link" href="#catalog">Купить абонемент</a>
+          </div>
+          <div class="header__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)" srcset="./img/intro-tablet.webp 1x, ./img/intro-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/intro-desktop.webp 1x, ./img/intro-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" srcset="./img/intro-tablet.jpg 1x, ./img/intro-tablet@2x.jpg 2x">
+              <img src="./img/intro-desktop.jpg" width="500" height="556" srcset="./img/intro-desktop@2x.jpg 2x" alt="Атлет.">
+            </picture>
+          </div>
+          </div>
       </header>
       <main>
         <section class="intro">
