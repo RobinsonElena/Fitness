@@ -49,13 +49,44 @@
           </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="about">
+          <div class="about__container container">
+            <div class="about__description">
+              <h2>Тренажерный зал</h1>
+              <p>Просторный зал площадью 900 кв/м</p>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            </div>
+            <div class="about__media">
+              <div class="about__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/about-mobile.webp 1x, ./img/about-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/about-tablet.webp 1x, ./img/about-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/about-desktop.webp 1x, ./img/about-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="./img/about-mobile.jpg 1x, ./img/about-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="./img/about-tablet.jpg 1x, ./img/about-tablet@2x.jpg 2x">
+                  <img src="./img/about-desktop.jpg" width="660" height="401" srcset="./img/about-desktop@2x.jpg 2x" alt="Тренажерный зал.">
+                </picture>
+              </div>
+              <div class="about__video video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="./img/video.webp 1x, ./img/video-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)" srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/video-desktop@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./img/video-mobile.jpg 1x, ./img/video-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1199px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+                    <img class="video__media" src="./img/video-desktop.jpg" width="364" height="228" srcset="./img/video-desktop@2x.jpg 2x" alt="Тренажерный зал.">
+                  </picture>
+                </a>
+                <button class="video__button btn" aria-label="Запустить видео">
+                  <svg width="100" height="100" viewBox="0 0 100 100">
+                    <use href="./img/sprite.svg#icon-video-button"></use>
+                  </svg>
+                  <img src="img/svg/video-button.svg" width="100" height="100" alt="">
+                </button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
