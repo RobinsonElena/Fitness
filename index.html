@@ -14,6 +14,7 @@
     <link rel="preload" href="./fonts/roboto-condensed-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/roboto-condensed-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
@@ -48,6 +49,7 @@
           </div>
           </div>
       </header>
+
       <main>
         <section class="about">
           <div class="about__container container">
@@ -226,10 +228,39 @@
             </div>
           </div>
         </section>
+
         <section class="super-games">
-          <div class="super-games__container container"></div>
+          <div class="super-games__container container">
+            <div class="super-games__promo">
+              <div class="super-games__box">
+                <h2>Super games</h2>
+                <div class="super-games__table">
+                  <p>Дата</p>
+                  <div class="super-games__data">
+                    <span>7</span>
+                    <p>Марта<br>2019</p>
+                  </div>
+                  <p>Время</p>
+                  <span>12:00</span>
+                </div>
+              </div>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <a class="super-games_btn btn" href="#">Заполнить заявку</a>
+            </div>
+            <div class="super-games__image">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="./img/super-games.webp 1x, ./img/super-games-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="./img/super-games-tablet.webp 1x, ./img/super-games-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/video-desktop.webp 1x, ./img/super-games-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="./img/super-games-mobile.jpg 1x, ./img/super-games-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="./img/super-games-tablet.jpg 1x, ./img/super-games-tablet@2x.jpg 2x">
+                <img src="./img/super-games-desktop.jpg" width="660" height="500" srcset="./img/super-games-desktop@2x.jpg 2x" alt="Атлет на старте.">
+              </picture>
+            </div>
+          </div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>
