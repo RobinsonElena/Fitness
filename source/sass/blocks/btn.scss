@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 24px;
+  padding: 26px;
   align-items: center;
   justify-content: center;
 
@@ -9,8 +9,8 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  letter-spacing: 0.5em;
-  color: $color-default-white;
+  letter-spacing: 0.05em;
+  color: $color-default-black;
   text-transform: uppercase;
 
   background-color: transparent;

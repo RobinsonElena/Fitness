@@ -1,11 +1,11 @@
 .about {
   width: 100%;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 7px;
 
   @include vp-1199 {
-    padding-top: 94px;
-    padding-bottom: 100px;
+    padding-top: 101px;
+    padding-bottom: 10px;
     text-align: center;
   }
 
@@ -125,7 +125,7 @@
     width: 39.23%;
     top: -84px;
     left: 50%;
-    margin: 0 0 28px;
+    margin: 0 0 6px;
     transform: translateX(-50%);
   }
 
