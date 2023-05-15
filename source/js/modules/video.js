@@ -1,19 +1,19 @@
-function findVideos() {
-  let videos = document.querySelectorAll('.video');
+const findVideos = () => {
+  const videos = document.querySelectorAll('.video');
 
   for (let i = 0; i < videos.length; i++) {
     setupVideo(videos[i]);
   }
-}
+};
 
-function setupVideo(video) {
-  let link = video.querySelector('.video__link');
-  let media = video.querySelector('.video__media');
-  let button = video.querySelector('.video__button');
-  let id = parseMediaURL(media);
+const setupVideo = (video) => {
+  const link = video.querySelector('.video__link');
+  const media = video.querySelector('.video__media');
+  const button = video.querySelector('.video__button');
+  const id = parseMediaURL(media);
 
   video.addEventListener('click', () => {
-    let iframe = createIframe(id);
+    const iframe = createIframe(id);
 
     link.remove();
     button.remove();
@@ -22,31 +22,26 @@ function setupVideo(video) {
 
   link.removeAttribute('href');
   video.classList.add('video--enabled');
-}
+};
 
-function parseMediaURL(media) {
-  let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  let url = media.src;
-  let match = url.match(regexp);
+const parseMediaURL = (media) => {
+  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
+  const url = media.src;
+  const match = url.match(regexp);
 
-  return match[1];
-}
+  return match;
+};
 
-function createIframe(id) {
-  let iframe = document.createElement('iframe');
+const createIframe = () => {
+  const iframe = document.createElement('iframe');
+  const source = 'https://www.youtube.com/embed/9TZXsZItgdw?rel=0&showinfo=0&autoplay=1';
 
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', generateURL(id));
+  iframe.setAttribute('src', source);
   iframe.classList.add('video__media');
 
   return iframe;
-}
-
-function generateURL(id) {
-  let query = '?rel=0&showinfo=0&autoplay=1';
-
-  return 'https://www.youtube.com/embed/' + id + query;
-}
+};
 
 export {findVideos};
