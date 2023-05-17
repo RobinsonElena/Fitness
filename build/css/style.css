@@ -2849,6 +2849,10 @@ button,
   padding-bottom: 140px;
 }
 
+.coaches__container {
+  position: relative;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
