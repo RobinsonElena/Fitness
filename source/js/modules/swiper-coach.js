@@ -1,11 +1,9 @@
-import Swiper from '../vendor/swiper';
-
 const swiperCoach = document.querySelector('.coaches__slider');
 
 const initSwiperCoach = () => {
   if (swiperCoach) {
     (() =>
-      new Swiper('.coaches__slider', {
+      new Swiper('.coaches__slider', { // eslint-disable-line
         direction: 'horizontal',
         loop: true,
 

@@ -14,4 +14,213 @@
 
 .coaches__container {
   position: relative;
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin: 0 0 48px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin: 2px 6px 31px 0;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+      margin: 0 6px 42px 0;
+    }
+  }
+}
+
+.coaches__content {
+  position: relative;
+
+  @include vp-1199 {
+    padding: 0 56px;
+  }
+
+  @include vp-767 {
+    padding: 0 32px;
+  }
+}
+
+.coaches__item {
+  position: relative;
+  aspect-ratio: 260 / 294;
+
+  @include vp-1199 {
+    aspect-ratio: 268 / 294;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 226 / 274;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .coaches__image {
+      box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      background: rgba($color-sapphire, 0.89);
+    }
+
+    .coaches__description,
+    .coaches__info {
+      display: block;
+    }
+  }
+}
+
+.coaches__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.coaches__description {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+  padding: 52px 19px 26px;
+  align-items: center;
+  overflow: auto;
+  background-color: transparent;
+
+  @include vp-767 {
+    padding: 42px 23px 42px 31px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    color: $color-default-white;
+    margin: 0 0 -4px;
+    text-align: center;
+
+    @include vp-1199 {
+      margin: 0 0 -4px 8px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 -4px 8px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background: rgba($color-sapphire, 0.89);
+
+    h3 {
+      margin: 0 9px -4px 0;
+    }
+  }
+}
+
+.coaches__info {
+  display: none;
+  padding: 0 10px 10px;
+
+  @include vp-1199 {
+    padding: 0 10px 10px 3px;
+  }
+
+  @include vp-767 {
+    padding: 0 10px 10px 3px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 0 33px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin: 0 0 24px;
+    padding-left: 42px;
+
+    @include vp-1199 {
+      padding-left: 49px;
+    }
+
+    @include vp-767 {
+      padding-left: 16px;
+    }
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $color-default-white;
+    margin: 0 0 13px;
+  }
+}
+
+.coaches__button {
+  border: none;
+  background-color: transparent;
+
+  &--prev {
+    left: -62px;
+
+    @include vp-1199 {
+      left: -6px;
+    }
+
+    @include vp-767 {
+      left: -8px;
+    }
+  }
+
+  &--next {
+    right: -62px;
+    transform: rotate(180deg);
+
+    @include vp-1199 {
+      right: -6px;
+    }
+
+    @include vp-767 {
+      right: -8px;
+    }
+  }
+
+  &::after {
+    display: none;
+  }
+
+  svg {
+    width: 16px;
+    height: 32px;
+
+    @include vp-767 {
+      height: 22px;
+    }
+  }
 }
