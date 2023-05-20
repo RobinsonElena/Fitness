@@ -1,0 +1,253 @@
+.advantages {
+  width: 100%;
+  padding-top: 97px;
+  padding-bottom: 130px;
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 92px;
+    padding-bottom: 93px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.advantages__container {
+  @include vp-767 {
+    padding: 0;
+  }
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin: 0 0 45px 12px;
+    text-align: center;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin: 0 22px 42px 0;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 38px;
+      margin: 0 18px 45px 0;
+    }
+  }
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: 1fr 241px 1fr;
+  column-gap: 60px;
+  row-gap: 74px;
+  margin: 0;
+  padding: 0 65px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 43px;
+    padding: 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 37px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  column-gap: 30px;
+  text-align: start;
+
+  @include vp-767 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &--center {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    flex-direction: column;
+    column-gap: 0;
+    margin: 10px 0;
+    padding: 54px 34px 58px;
+    justify-content: center;
+    text-align: center;
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+
+    @include vp-1199 {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      margin: 0 118px;
+      padding: 33px 34px 38px;
+    }
+
+    @include vp-767 {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      margin: 7px 0;
+      padding: 38px 34px 43px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 auto;
+
+      @include vp-1199 {
+        max-width: 55%;
+      }
+
+      @include vp-767 {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.advantages__item:nth-child(even) {
+  padding-left: 14px;
+
+  @include vp-1199 {
+    padding-left: 0;
+  }
+}
+
+.advantages__item:nth-child(1n+4) {
+  padding-top: 69px;
+  border-top: 2px solid rgba($color-crimson, 0.2);
+
+  @include vp-1199 {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.advantages__number {
+  display: flex;
+  flex-direction: column;
+
+  @include vp-767 {
+    align-items: center;
+  }
+
+  p {
+    font-size: 71px;
+    line-height: 0.96;
+    font-weight: 700;
+    margin: 0;
+    background: $red-to-blue-number;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @include vp-1199 {
+      font-size: 58px;
+      line-height: 0.9;
+      padding-top: 3px;
+    }
+
+    @include vp-767 {
+      padding-top: 0;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $color-persian-blue;
+  }
+}
+
+.advantages__number-main {
+  margin: 0 0 32px;
+
+  @include vp-1199 {
+    margin: 0 0 13px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 11px;
+  }
+
+  p {
+    font-size: 74px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0 4px 2px 0;
+    background: none;
+
+    @include vp-1199 {
+      max-width: 100%;
+      margin: 0 6px 0 0;
+    }
+
+    @include vp-767 {
+      margin: 0 auto;
+      padding-right: 4px;
+    }
+  }
+
+  span {
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      font-size: 22px;
+      line-height: 33px;
+    }
+
+    @include vp-767 {
+      line-height: 1;
+    }
+  }
+}
+
+.advantages__text {
+  h3 {
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    margin: 3px 0 7px;
+
+    @include vp-1199 {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 0 2px;
+    }
+
+    @include vp-767 {
+      margin: 6px 0 2px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0;
+
+    @include vp-767 {
+      max-width: 71%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
