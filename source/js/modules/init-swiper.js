@@ -34,4 +34,22 @@ const initSwiperCoach = () => {
   }
 };
 
-export {initSwiperCoach};
+const swiperReview = document.querySelector('.reviews__slider');
+
+const initSwiperReview = () => {
+  if (swiperReview) {
+    (() =>
+      new Swiper('.reviews__slider', { // eslint-disable-line
+        direction: 'horizontal',
+        loop: false,
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+    )();
+  }
+};
+
+export {initSwiperCoach, initSwiperReview};
