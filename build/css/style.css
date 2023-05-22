@@ -2633,6 +2633,12 @@ button,
   z-index: 1;
 }
 
+.tabs__btn {
+  width: 100%;
+  outline: 2px solid #102654;
+  outline-offset: -2px;
+}
+
 [data-tabs=parent] {
   overflow: hidden;
 }
@@ -2706,12 +2712,6 @@ button,
   margin: 0 0 8px;
 }
 
-.catalog_btn {
-  width: 100%;
-  outline: 2px solid #102654;
-  outline-offset: -2px;
-}
-
 .catalog__image {
   position: absolute;
   bottom: -150px;
@@ -2737,7 +2737,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  padding: 16.1% 15.5% 17%;
+  padding: 16.1% 15.5% 15%;
   color: #ffffff;
   text-align: right;
   background-color: #ed0233;
@@ -2756,7 +2756,7 @@ button,
   line-height: 14px;
   letter-spacing: 0.05em;
   color: #ffffff;
-  padding: 19px;
+  padding: 24px;
   text-align: center;
   text-transform: uppercase;
   border: 4px solid #ffffff;
@@ -2841,6 +2841,10 @@ button,
 .super-games__image {
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.super-games__image img {
+  height: 100%;
 }
 
 .coaches {
@@ -3588,6 +3592,108 @@ button,
   text-decoration: none;
 }
 
+.footer {
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 38px;
+  color: #ffffff;
+  background-color: #030a1a;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 103px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__logo {
+  margin: 13px 35px 0 0;
+}
+
+.footer__logo svg {
+  width: 88px;
+  height: 32px;
+  fill: #ffffff;
+}
+
+.footer__logo.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px 41px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__nav-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 5px 0;
+}
+
+.footer__nav-link.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (-webkit-max-content)[3];
+  -ms-grid-columns: (max-content)[3];
+  grid-template-columns: repeat(3, -webkit-max-content);
+  grid-template-columns: repeat(3, max-content);
+  -webkit-column-gap: 11px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
+  row-gap: 11px;
+  padding: 0;
+  list-style-type: none;
+  margin: 3px 0 0 25px;
+}
+
+.social__link {
+  padding: 0;
+}
+
+.social__link svg {
+  width: 25px;
+  height: 25px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #030a1a;
+  opacity: 0.8;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3628,6 +3734,12 @@ button,
     }
   }
 */
+
+@media (max-width: 1279px) {
+  .footer__container {
+    padding: 0 70px;
+  }
+}
 
 @media (max-width: 1199px) {
   .container {
@@ -3785,6 +3897,9 @@ button,
     -moz-column-gap: 0;
     column-gap: 0;
     row-gap: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .tabs__item {
@@ -4082,14 +4197,14 @@ button,
 
   .contacts__wrapper {
     max-width: 100%;
-    padding: 61px 103px 70px 133px;
+    padding: 61px 103px 43px 133px;
   }
 
   .contacts__wrapper h2 {
     font-size: 42px;
     line-height: 50px;
     font-weight: 600;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
   }
 
   .contacts__list {
@@ -4129,6 +4244,31 @@ button,
 
   .input-message {
     top: -19px;
+  }
+
+  .footer {
+    padding-top: 41px;
+    padding-bottom: 41px;
+  }
+
+  .footer__container {
+    padding: 0 39px 0 45px;
+  }
+
+  .footer__logo {
+    margin: 0 18px 0 0;
+  }
+
+  .footer__logo svg {
+    width: 82px;
+  }
+
+  .footer__nav-list {
+    gap: 2px 30px;
+  }
+
+  .social {
+    margin: 0 0 0 11px;
   }
 }
 
@@ -4338,6 +4478,7 @@ button,
   .super-games__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    max-width: 690px;
   }
 
   .super-games__promo {
@@ -4619,13 +4760,14 @@ button,
   }
 
   .contacts__wrapper {
-    padding: 70px 15px 70px 15px;
+    padding: 63px 15px 43px;
   }
 
   .contacts__wrapper h2 {
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
+    margin: 0 0 34px;
   }
 
   .contacts__list {
@@ -4640,8 +4782,77 @@ button,
     display: none;
   }
 
+  .contacts__list li {
+    margin-bottom: 20px;
+  }
+
   .contacts__list p {
     margin: 0 0 5px;
+  }
+
+  .contacts__item {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .footer {
+    padding-bottom: 46px;
+  }
+
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0 15px;
+  }
+
+  .footer__nav {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    max-width: 500px;
+    margin-bottom: 22px;
+  }
+
+  .footer__logo svg {
+    width: 68px;
+  }
+
+  .footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .footer__nav-link {
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 8px 0 13px;
+  }
+
+  .footer__nav-item {
+    width: 100%;
+  }
+
+  .social {
+    margin: 0;
   }
 }
 
@@ -4754,5 +4965,13 @@ button,
   .form__input input:hover:not(.focus-visible).focus-visible:focus {
     outline: 1px solid #ffffff;
     outline-offset: 2px;
+  }
+
+  .footer__logo:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .footer__nav-link:hover:not(.focus-visible) {
+    opacity: 0.8;
   }
 }

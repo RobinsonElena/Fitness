@@ -97,6 +97,7 @@
     padding: 0 118px;
     column-gap: 0;
     row-gap: 40px;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -210,4 +211,10 @@
       height: 33px;
     }
   }
+}
+
+.tabs__btn {
+  width: 100%;
+  outline: 2px solid $color-sapphire;
+  outline-offset: -2px;
 }
