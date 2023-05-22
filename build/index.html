@@ -579,6 +579,51 @@
           </div>
         </section>
 
+        <div class="main-page-wrapper">
+          <section class="form" data-form-validate>
+            <div class="form__wrapper">
+              <h2>Бесплатное занятие</h2>
+              <form action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form__input-wrapper">
+                  <div class="form__input">
+                    <label for="name" data-required data-validate-type="text" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля">
+                      <input type="text" id="name" name="name" placeholder="Имя" required data-focus autocomplete="off">
+                    </label>
+                  </div>
+                  <div class="form__input">
+                    <label for="phone" data-required data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-phone-length="18">
+                      <input type="tel" id="phone" name="phone" placeholder="Телефон" required autocomplete="off">
+                    </label>
+                  </div>
+                </div>
+                <button class="btn form__button" type="submit">отправить</button>
+              </form>
+            </div>
+          </section>
+          <section class="contacts">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <ul class="contacts__list">
+                <li>
+                  <p>Адрес:</p>
+                  <address>г. Омск, ул. 60 лет Октября, 7</address>
+                </li>
+                <li>
+                  <p>Телефон:</p>
+                  <a href="tel:88002000000">8-800-555-55-55</a>
+                </li>
+                <li>
+                  <p>График работы:</p>
+                  <span>Пн-Вс: с 8:00 до 22:00</span>
+                </li>
+                <li>
+                  <p>Email:</p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </main>
 
       <footer>

@@ -3386,6 +3386,208 @@ button,
   height: 32px;
 }
 
+.main-page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #74819c;
+}
+
+.form {
+  background-color: #102654;
+}
+
+.form__wrapper {
+  max-width: 580px;
+  margin-left: auto;
+  padding: 65px 170px 70px 0;
+}
+
+.form__wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  margin: 0 0 33px;
+  text-align: left;
+}
+
+.form__input-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.form__input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.form__input input {
+  width: 100%;
+  padding: 0;
+  color: #ffffff;
+  background-color: #102654;
+  border: 0;
+  outline: none;
+}
+
+.form__input input.focus-visible:focus {
+  opacity: 0.8;
+}
+
+.form__input input.focus-visible:focus.focus-visible:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.form__input input::-webkit-input-placeholder {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input input::-moz-placeholder {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input input:-ms-input-placeholder {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input input::-ms-input-placeholder {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input input::placeholder {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.form__input label {
+  position: relative;
+  display: block;
+}
+
+.form__input label.is-invalid input {
+  outline: 2px solid #ff1553;
+}
+
+.form__input label.is-invalid input:focus,
+.form__input label.is-invalid input:hover {
+  outline: 2px solid rgba(255, 21, 83, 0.5);
+}
+
+.input-message {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.input-message.is-invalid {
+  color: #ff1553;
+}
+
+.input-message.is-valid {
+  color: #2c39f2;
+}
+
+.form__button {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  border: 3px solid #ffffff;
+}
+
+.form__button.focus-visible:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.contacts__wrapper {
+  max-width: 585px;
+  margin-right: auto;
+  padding: 56px 0 48px 120px;
+}
+
+.contacts__wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0 0 38px;
+  text-align: left;
+}
+
+.contacts__list {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 120px;
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  margin: 0;
+  padding: 0 0 0 3px;
+  list-style-type: none;
+}
+
+.contacts__list::after {
+  position: absolute;
+  content: "";
+  left: 234px;
+  top: 5px;
+  bottom: 22px;
+  width: 1px;
+  background-color: #74819c;
+}
+
+.contacts__list li {
+  margin-bottom: 15px;
+}
+
+.contacts__list p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 0 2px;
+  text-align: left;
+}
+
+.contacts__list address,
+.contacts__list a,
+.contacts__list span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3854,6 +4056,80 @@ button,
   .reviews__button--next {
     right: 240px;
   }
+
+  .main-page-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .form__wrapper {
+    max-width: 100%;
+    padding: 61px 163px 70px 133px;
+  }
+
+  .form__wrapper h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 0 0 38px;
+  }
+
+  .form__input-wrapper {
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+  }
+
+  .contacts__wrapper {
+    max-width: 100%;
+    padding: 61px 103px 70px 133px;
+  }
+
+  .contacts__wrapper h2 {
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+  }
+
+  .contacts__list {
+    -webkit-column-gap: 96px;
+    -moz-column-gap: 96px;
+    column-gap: 96px;
+    padding: 0;
+  }
+
+  .contacts__list::after {
+    left: 50%;
+  }
+
+  .contacts__list li {
+    margin-bottom: 18px;
+  }
+
+  .contacts__list p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 7px;
+  }
+
+  .contacts__list address,
+  .contacts__list a,
+  .contacts__list span {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1023px) {
+  .form__input {
+    padding-left: 0;
+  }
+
+  .input-message {
+    top: -19px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4316,6 +4592,57 @@ button,
   .reviews__button svg {
     height: 22px;
   }
+
+  .form__wrapper {
+    padding: 63px 15px 70px 15px;
+  }
+
+  .form__wrapper h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+    margin: 0 0 40px;
+  }
+
+  .form__input-wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    row-gap: 46px;
+    margin-bottom: 42px;
+  }
+
+  .form__input {
+    margin-bottom: 0;
+  }
+
+  .contacts__wrapper {
+    padding: 70px 15px 70px 15px;
+  }
+
+  .contacts__wrapper h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  .contacts__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+  }
+
+  .contacts__list::after {
+    display: none;
+  }
+
+  .contacts__list p {
+    margin: 0 0 5px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4418,5 +4745,14 @@ button,
   .super-games__promo a:hover:not(.focus-visible) {
     color: #102654;
     background-color: #ffffff;
+  }
+
+  .form__input input:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
+  .form__input input:hover:not(.focus-visible).focus-visible:focus {
+    outline: 1px solid #ffffff;
+    outline-offset: 2px;
   }
 }

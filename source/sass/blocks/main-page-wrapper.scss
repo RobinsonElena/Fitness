@@ -1,0 +1,9 @@
+.main-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid $color-light-slate-blue;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}
