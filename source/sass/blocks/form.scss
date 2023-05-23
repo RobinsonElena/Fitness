@@ -77,6 +77,7 @@
     color: $color-default-white;
     background-color: $color-sapphire;
     border: 0;
+    border-bottom: 1px solid $color-default-white;
     outline: none;
 
     @include hover-focus {
