@@ -103,13 +103,11 @@
     display: block;
 
     &.is-invalid {
-      input {
-        outline: 2px solid $color-torch-red;
+      outline: 2px solid $color-torch-red;
 
-        &:focus,
-        &:hover {
-          outline: 2px solid rgba($color-torch-red, 0.5);
-        }
+      &:focus,
+      &:hover {
+        outline: 2px solid rgba($color-torch-red, 0.5);
       }
     }
   }
@@ -145,6 +143,11 @@
   padding: 16px;
   text-align: center;
   border: 3px solid $color-default-white;
+
+  @include hover-focus {
+    color: $color-sapphire;
+    background-color: $color-default-white;
+  }
 
   &.focus-visible:focus {
     outline: 1px solid $color-default-white;

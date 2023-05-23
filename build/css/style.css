@@ -2256,6 +2256,9 @@ button,
   -webkit-column-gap: 64px;
   -moz-column-gap: 64px;
   column-gap: 64px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 0 103px;
 }
 
@@ -3225,6 +3228,10 @@ button,
   border-bottom: 1px solid #1c3374;
 }
 
+.promo__item a.focus-visible:focus {
+  opacity: 0.8;
+}
+
 .promo__item--main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -3486,12 +3493,12 @@ button,
   display: block;
 }
 
-.form__input label.is-invalid input {
+.form__input label.is-invalid {
   outline: 2px solid #ff1553;
 }
 
-.form__input label.is-invalid input:focus,
-.form__input label.is-invalid input:hover {
+.form__input label.is-invalid:focus,
+.form__input label.is-invalid:hover {
   outline: 2px solid rgba(255, 21, 83, 0.5);
 }
 
@@ -3521,6 +3528,11 @@ button,
   padding: 16px;
   text-align: center;
   border: 3px solid #ffffff;
+}
+
+.form__button.focus-visible:focus {
+  color: #102654;
+  background-color: #ffffff;
 }
 
 .form__button.focus-visible:focus {
@@ -3897,9 +3909,6 @@ button,
     -moz-column-gap: 0;
     column-gap: 0;
     row-gap: 40px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .tabs__item {
@@ -4958,6 +4967,10 @@ button,
     background-color: #ffffff;
   }
 
+  .promo__item a:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
   .form__input input:hover:not(.focus-visible) {
     opacity: 0.8;
   }
@@ -4965,6 +4978,11 @@ button,
   .form__input input:hover:not(.focus-visible).focus-visible:focus {
     outline: 1px solid #ffffff;
     outline-offset: 2px;
+  }
+
+  .form__button:hover:not(.focus-visible) {
+    color: #102654;
+    background-color: #ffffff;
   }
 
   .footer__logo:hover:not(.focus-visible) {

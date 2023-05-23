@@ -96,6 +96,9 @@
   display: grid;
   grid-template-columns: 396px 1fr;
   column-gap: 64px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   padding: 0 103px;
 
   @include vp-1199 {

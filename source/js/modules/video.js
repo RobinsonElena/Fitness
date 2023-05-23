@@ -13,11 +13,13 @@ const setupVideo = (video) => {
   const id = parseMediaURL(media);
 
   video.addEventListener('click', () => {
-    const iframe = createIframe(id);
+    if (link && media && button) {
+      const iframe = createIframe(id);
 
-    link.remove();
-    button.remove();
-    video.appendChild(iframe);
+      link.remove();
+      button.remove();
+      video.appendChild(iframe);
+    }
   });
 
   link.removeAttribute('href');
