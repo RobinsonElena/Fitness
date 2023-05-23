@@ -3454,6 +3454,7 @@ button,
   color: #ffffff;
   background-color: #102654;
   border: 0;
+  border-bottom: 1px solid #ffffff;
   outline: none;
 }
 
