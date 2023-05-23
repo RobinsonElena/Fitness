@@ -2374,7 +2374,7 @@ button,
 }
 
 .about__description {
-  padding: 0 4px 15px 60px;
+  padding: 39px 4px 15px 60px;
 }
 
 .about__description h2 {
@@ -2712,7 +2712,7 @@ button,
   line-height: 65px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  margin: 0 0 8px;
+  margin: 0 5px 8px 0;
 }
 
 .catalog__image {
@@ -2740,9 +2740,12 @@ button,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  padding: 16.1% 15.5% 15%;
+  height: 100%;
+  padding: 16.1% 15.5% 17%;
   color: #ffffff;
   text-align: right;
+  -ms-grid-row-align: start;
+  align-self: start;
   background-color: #ed0233;
 }
 
@@ -2876,6 +2879,7 @@ button,
 .coaches__item {
   position: relative;
   aspect-ratio: 260/294;
+  cursor: pointer;
 }
 
 .coaches__item:hover .coaches__image,
@@ -2952,7 +2956,7 @@ button,
 .coaches__description:hover h3,
 .coaches__description:focus h3,
 .coaches__description:focus-within h3 {
-  margin: 0 9px -4px 0;
+  margin: 0 0 -4px 0;
 }
 
 .coaches__info {
@@ -3193,7 +3197,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 211px;
-  padding: 25px 28px;
+  padding: 25px 28px 28px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -3402,7 +3406,6 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  border-top: 1px solid #74819c;
 }
 
 .form {
@@ -3506,7 +3509,7 @@ button,
   position: absolute;
   top: -20px;
   left: 0;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 15px;
 }
 
@@ -3540,10 +3543,14 @@ button,
   outline-offset: 2px;
 }
 
+.contacts {
+  border-top: 1px solid #74819c;
+}
+
 .contacts__wrapper {
   max-width: 585px;
   margin-right: auto;
-  padding: 56px 0 48px 120px;
+  padding: 56px 0 47px 120px;
 }
 
 .contacts__wrapper h2 {
@@ -3607,7 +3614,7 @@ button,
 .footer {
   width: 100%;
   padding-top: 29px;
-  padding-bottom: 38px;
+  padding-bottom: 27px;
   color: #ffffff;
   background-color: #030a1a;
 }
@@ -3902,8 +3909,8 @@ button,
   }
 
   .tabs__element {
-    -ms-grid-columns: minmax(442px, 650px);
-    grid-template-columns: minmax(442px, 650px);
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     padding: 0 118px;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
@@ -3944,13 +3951,13 @@ button,
   .super-games__promo p {
     font-size: 12px;
     line-height: 18px;
-    margin: 2px 0 29px;
+    margin: 0 0 31px;
   }
 
   .super-games__promo a {
     font-size: 10px;
     line-height: 12px;
-    padding: 11px;
+    padding: 13px;
     border: 2px solid #ffffff;
   }
 
@@ -3962,7 +3969,7 @@ button,
 
   .super-games__box h2 {
     font-size: 48px;
-    line-height: 46px;
+    line-height: 0.94;
   }
 
   .super-games__table p {
@@ -4008,8 +4015,12 @@ button,
     aspect-ratio: 268/294;
   }
 
+  .coaches__description {
+    padding: 52px 28px 26px 19px;
+  }
+
   .coaches__description h3 {
-    margin: 0 0 -4px 8px;
+    margin: 0 0 -4px 18px;
   }
 
   .coaches__info {
@@ -4257,7 +4268,7 @@ button,
 
   .footer {
     padding-top: 41px;
-    padding-bottom: 41px;
+    padding-bottom: 34px;
   }
 
   .footer__container {
@@ -4274,6 +4285,7 @@ button,
 
   .footer__nav-list {
     gap: 2px 30px;
+    padding: 0 0 5px;
   }
 
   .social {
@@ -4491,7 +4503,7 @@ button,
   }
 
   .super-games__promo {
-    padding: 16.1% 15.5% 17.9%;
+    padding: 16.1% 15.5% 16.8%;
   }
 
   .super-games__promo p {
@@ -4536,6 +4548,12 @@ button,
     margin: 0 0 -4px 8px;
   }
 
+  .coaches__description:hover h3,
+  .coaches__description:focus h3,
+  .coaches__description:focus-within h3 {
+    padding-right: 8px;
+  }
+
   .coaches__info {
     padding: 0 10px 10px 3px;
   }
@@ -4568,7 +4586,7 @@ button,
   .advantages__container h2 {
     font-size: 32px;
     line-height: 38px;
-    margin: 0 18px 45px 0;
+    margin: 0 18px 44px 0;
   }
 
   .advantages__list {
@@ -4722,6 +4740,7 @@ button,
   }
 
   .reviews__description h3 {
+    min-height: 50px;
     line-height: 1.4;
     margin: 0 0 22px 99px;
   }
@@ -4829,7 +4848,7 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     max-width: 500px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
   }
 
   .footer__logo svg {

@@ -8,19 +8,21 @@ const initSwiperCoach = () => {
         loop: true,
 
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.coaches__button--next',
+          prevEl: '.coaches__button--prev',
         },
 
         breakpoints: {
           320: {
             slidesPerView: 1,
             spaceBetween: 20,
+            initialSlide: 2,
           },
 
           768: {
             slidesPerView: 2,
             spaceBetween: 30,
+            initialSlide: 2,
           },
 
           1200: {
@@ -44,8 +46,8 @@ const initSwiperReview = () => {
         loop: false,
 
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.reviews__button--next',
+          prevEl: '.reviews__button--prev',
         },
       })
     )();

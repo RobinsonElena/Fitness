@@ -1,7 +1,11 @@
+.contacts {
+  border-top: 1px solid $color-light-slate-blue;
+}
+
 .contacts__wrapper {
   max-width: 585px;
   margin-right: auto;
-  padding: 56px 0 48px 120px;
+  padding: 56px 0 47px 120px;
 
   @include vp-1199 {
     max-width: 100%;

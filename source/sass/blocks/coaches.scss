@@ -53,6 +53,7 @@
 .coaches__item {
   position: relative;
   aspect-ratio: 260 / 294;
+  cursor: pointer;
 
   @include vp-1199 {
     aspect-ratio: 268 / 294;
@@ -106,6 +107,10 @@
   overflow: auto;
   background-color: transparent;
 
+  @include vp-1199 {
+    padding: 52px 28px 26px 19px;
+  }
+
   @include vp-767 {
     padding: 42px 23px 42px 31px;
   }
@@ -119,7 +124,7 @@
     text-align: center;
 
     @include vp-1199 {
-      margin: 0 0 -4px 8px;
+      margin: 0 0 -4px 18px;
     }
 
     @include vp-767 {
@@ -133,7 +138,11 @@
     background: rgba($color-sapphire, 0.89);
 
     h3 {
-      margin: 0 9px -4px 0;
+      margin: 0 0 -4px 0;
+
+      @include vp-767 {
+        padding-right: 8px;
+      }
     }
   }
 }

@@ -28,13 +28,15 @@
 .super-games__promo {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 16.1% 15.5% 15%;
+  height: 100%;
+  padding: 16.1% 15.5% 17%;
   color: $color-default-white;
   text-align: right;
+  align-self: start;
   background-color: $color-torch-red2;
 
   @include vp-767 {
-    padding: 16.1% 15.5% 17.9%;
+    padding: 16.1% 15.5% 16.8%;
   }
 
   p {
@@ -46,7 +48,7 @@
     @include vp-1199 {
       font-size: 12px;
       line-height: 18px;
-      margin: 2px 0 29px;
+      margin: 0 0 31px;
     }
 
     @include vp-767 {
@@ -68,7 +70,7 @@
     @include vp-1199 {
       font-size: 10px;
       line-height: 12px;
-      padding: 11px;
+      padding: 13px;
       border: 2px solid $color-default-white;
     }
 
@@ -100,7 +102,7 @@
 
     @include vp-1199 {
       font-size: 48px;
-      line-height: 46px;
+      line-height: 0.94;
     }
 
     @include vp-767 {

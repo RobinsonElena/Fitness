@@ -107,6 +107,7 @@
     text-align: start;
 
     @include vp-767 {
+      min-height: 50px;
       line-height: 1.4;
       margin: 0 0 22px 99px;
     }
