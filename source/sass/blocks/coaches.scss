@@ -196,6 +196,8 @@
 }
 
 .coaches__button {
+  position: absolute;
+  z-index: 1;
   border: none;
   background-color: $color-transparent;
   stroke: $color-dark-gray;
