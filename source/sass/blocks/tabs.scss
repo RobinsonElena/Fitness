@@ -9,16 +9,17 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  padding: 10px 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 .tabs__control {
   position: relative;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   font-size: 20px;
   line-height: 30px;
-  opacity: 0.5;
+  color: rgba($color-sapphire, 0.5);
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -65,7 +66,7 @@
     height: 2px;
     background-color: $color-crimson;
     left: 0;
-    bottom: -2px;
+    bottom: -12px;
     opacity: 0;
   }
 }
@@ -87,6 +88,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
+  row-gap: 40px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -110,7 +112,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 56px 69px 60px;
+  padding: 56px 30px 60px;
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
 
@@ -213,7 +215,11 @@
 }
 
 .tabs__btn {
-  width: 100%;
+  width: 73%;
   outline: 2px solid $color-sapphire;
   outline-offset: -2px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 }

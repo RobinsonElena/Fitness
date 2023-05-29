@@ -5,15 +5,15 @@
 .form__wrapper {
   max-width: 580px;
   margin-left: auto;
-  padding: 65px 170px 70px 0;
+  padding: 65px 170px 68px 0;
 
   @include vp-1199 {
     max-width: 100%;
-    padding: 61px 163px 70px 133px;
+    padding: 61px 163px 69px 133px;
   }
 
   @include vp-767 {
-    padding: 63px 15px 70px 15px;
+    padding: 63px 15px 69px 15px;
   }
 
   h2 {
@@ -54,8 +54,8 @@
   @include vp-767 {
     grid-template-columns: 1fr;
     column-gap: 0;
-    row-gap: 46px;
-    margin-bottom: 42px;
+    row-gap: 39px;
+    margin-bottom: 39px;
   }
 }
 
@@ -65,7 +65,7 @@
   line-height: 16px;
   font-weight: 400;
   color: $color-default-white;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @include vp-767 {
     margin-bottom: 0;
@@ -73,7 +73,7 @@
 
   input {
     width: 100%;
-    padding: 0;
+    padding: 0 0 5px;
     color: $color-default-white;
     background-color: $color-sapphire;
     border: 0;
@@ -81,6 +81,7 @@
     outline: none;
 
     @include hover-focus {
+      background-color: $color-chambray;
       opacity: 0.8;
 
       &.focus-visible:focus {
@@ -92,7 +93,6 @@
 
   input::placeholder {
     color: $color-default-white;
-    border-bottom: 1px solid $color-default-white;
   }
 
   @include vp-1023 {
