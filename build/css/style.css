@@ -3038,14 +3038,7 @@ button,
   height: 32px;
 }
 
-.coaches__button svg path {
-  fill: inherit;
-  stroke: inherit;
-  stroke-width: inherit;
-}
-
 .coaches__button:hover svg,
-.coaches__button:focus svg,
 .coaches__button:focus-visible {
   stroke: #003d85;
 }
@@ -4653,7 +4646,7 @@ button,
     right: -8px;
   }
 
-  .coaches__button svg path {
+  .coaches__button svg {
     height: 22px;
   }
 

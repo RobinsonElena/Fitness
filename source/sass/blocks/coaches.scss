@@ -232,12 +232,6 @@
   svg {
     width: 16px;
     height: 32px;
-  }
-
-  svg path {
-    fill: inherit;
-    stroke: inherit;
-    stroke-width: inherit;
 
     @include vp-767 {
       height: 22px;
@@ -246,7 +240,6 @@
 }
 
 .coaches__button:hover svg,
-.coaches__button:focus svg,
 .coaches__button:focus-visible {
   stroke: $color-dark-cerulean;
 }
