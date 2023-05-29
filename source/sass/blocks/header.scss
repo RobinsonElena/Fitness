@@ -74,7 +74,7 @@
   max-width: 154px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 
   @include vp-1199 {
     flex-direction: row;

@@ -2250,7 +2250,7 @@ button,
   max-width: 154px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .header__phone {
@@ -2763,8 +2763,6 @@ button,
   padding: 16.1% 15.5% 17%;
   color: #ffffff;
   text-align: right;
-  -ms-flex-line-pack: start;
-  align-content: start;
   background-color: #ed0233;
 }
 
@@ -2776,6 +2774,9 @@ button,
 }
 
 .super-games__promo a {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
