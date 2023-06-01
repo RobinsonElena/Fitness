@@ -113,9 +113,9 @@
   grid-template-columns: 396px 1fr;
   column-gap: 64px;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 60px;
 
   @include vp-1199 {
     grid-template-columns: 1fr 1fr;
@@ -140,6 +140,7 @@
   grid-template-rows: min-content min-content min-content;
   column-gap: 18px;
   row-gap: 15px;
+  width: 100%;
   justify-self: end;
   color: $color-default-white;
 
