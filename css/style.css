@@ -1522,9 +1522,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 60px;
 }
 
 .btn {
@@ -2275,9 +2275,9 @@ button,
   -moz-column-gap: 64px;
   column-gap: 64px;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding: 0 60px;
 }
 
 .header__description {
@@ -2293,6 +2293,7 @@ button,
   -moz-column-gap: 18px;
   column-gap: 18px;
   row-gap: 15px;
+  width: 100%;
   -ms-grid-column-align: end;
   justify-self: end;
   color: #ffffff;
@@ -2876,8 +2877,7 @@ button,
 
 .coaches {
   width: 100%;
-  padding-top: 0;
-  padding-bottom: 140px;
+  padding: 0 30px 140px;
 }
 
 .coaches__container {
@@ -4069,7 +4069,7 @@ button,
   }
 
   .coaches {
-    padding-bottom: 100px;
+    padding: 0 0 100px;
   }
 
   .coaches__container h2 {
@@ -4605,7 +4605,7 @@ button,
   }
 
   .coaches {
-    padding-bottom: 70px;
+    padding: 0 0 70px;
   }
 
   .coaches__container h2 {
